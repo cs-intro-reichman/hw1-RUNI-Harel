@@ -16,6 +16,7 @@ public class TimeFormat {
 		System.out.println(hours + " And " + minutes);
 		String symbol = "";
 		if (hours >= 12 && hours <= 24) {
+			hours = hours - 12;
 			symbol = "PM";
 		} else if (hours >= 0 && hours <= 11) {
 			symbol = "AM";
